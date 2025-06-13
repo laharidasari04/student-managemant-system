@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Students - Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Management System</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="add-student.html">Add Student</a>
+                <a href="view-students.html" class="active">View Students</a>
+            </nav>
+        </header>
+        
+        <main class="list-page">
+            <div class="list-section">
+                <h2>Student List</h2>
+                <div class="search-box">
+                    <input type="text" id="searchInput" placeholder="Search students...">
+                </div>
+                <div class="table-container">
+                    <table id="studentTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Name</th>
+                                <th>Email</th>
+                                <th>Phone</th>
+                                <th>Grade</th>
+                                <th>Actions</th>
+                            </tr>
+                        </thead>
+                        <tbody id="studentList">
+                        </tbody>
+                    </table>
+                </div>
+                <div class="no-students" id="noStudents">
+                    No students found.
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

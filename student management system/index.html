@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Management System</h1>
+            <nav class="main-nav">
+                <a href="index.html" class="active">Home</a>
+                <a href="add-student.html">Add Student</a>
+                <a href="view-students.html">View Students</a>
+            </nav>
+        </header>
+        
+        <main class="home-content">
+            <div class="welcome-section">
+                <h2>Welcome to Student Management System</h2>
+                <p>Manage your students' information efficiently and effectively.</p>
+                
+                <div class="quick-actions">
+                    <a href="add-student.html" class="action-card">
+                        <h3>Add New Student</h3>
+                        <p>Register a new student in the system</p>
+                        <span class="arrow">→</span>
+                    </a>
+                    
+                    <a href="view-students.html" class="action-card">
+                        <h3>View Students</h3>
+                        <p>Browse and manage existing students</p>
+                        <span class="arrow">→</span>
+                    </a>
+                </div>
+
+                <div class="system-stats">
+                    <div class="stat-card">
+                        <h4>Total Students</h4>
+                        <p id="totalStudents">0</p>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student - Student Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Student Management System</h1>
+            <nav class="main-nav">
+                <a href="index.html">Home</a>
+                <a href="add-student.html" class="active">Add Student</a>
+                <a href="view-students.html">View Students</a>
+            </nav>
+        </header>
+        
+        <main class="form-page">
+            <div class="form-section">
+                <h2>Add New Student</h2>
+                <form id="studentForm">
+                    <input type="hidden" id="studentId">
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="grade">Grade:</label>
+                        <input type="number" id="grade" min="1" max="12" required>
+                    </div>
+                    <div class="form-buttons">
+                        <button type="submit" id="submitBtn">Add Student</button>
+                        <button type="button" id="resetBtn">Reset</button>
+                    </div>
+                </form>
+            </div>
+            <div class="success-message" id="successMessage">
+                Student added successfully!
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
